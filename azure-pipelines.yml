@@ -11,7 +11,7 @@ pool:
 
 steps:
 settings
--task: TerraformtaskV1
+- task: TerraformtaskV1
 inputs:
      provider: 'azurerm'
 
@@ -30,7 +30,7 @@ inputs:
      backendAzureRmKey: 'tf/terraform.tfstate'
      
 settings
--task: Terraform
+- task: TerraformtaskV1
 inputs:
      provider: 'azurerm'
 
