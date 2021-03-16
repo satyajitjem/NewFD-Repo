@@ -12,6 +12,12 @@ pool:
 steps:
 - task: TerraformtaskV1
 inputs:
+- task: AppCenterTest@1
+  inputs:
+    artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest'
+    frameworkOption: 'appium'
+    credentialsOption: 'serviceEndpoint'
+    localeOption: 'en_US'
      provider: 'azurerm'
 
      command: 'init'
