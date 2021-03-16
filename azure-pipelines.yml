@@ -10,7 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-settings
 - task: TerraformtaskV1
 inputs:
      provider: 'azurerm'
@@ -29,7 +28,6 @@ inputs:
 
      backendAzureRmKey: 'tf/terraform.tfstate'
      
-settings
 - task: TerraformtaskV1
 inputs:
      provider: 'azurerm'
